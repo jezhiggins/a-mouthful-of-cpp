@@ -23,10 +23,10 @@ Me? I'm Jez Higgins, a jobbing programmer who has had an on-again
 off-again relationship with C++ for over 25 years. I'll try to bring
 some answers.
 
-+ Ideally, you'll have either CLion or Visual Studio Code (with the
+<sup>+</sup> Ideally, you'll have either CLion or Visual Studio Code (with the
 C/C++ and CMake Tools extensions) installed beforehand. CLion has a 30
-day trial license, while Visual Studio Code is free. Don't worry if not
-- just arrive a few minutes early and I'll try to sort you out.
+day trial license, while Visual Studio Code is free. Don't worry if not,
+just arrive a few minutes early and I'll try to sort you out.
 
 ----
 
