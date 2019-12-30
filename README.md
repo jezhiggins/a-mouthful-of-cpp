@@ -23,10 +23,11 @@ Me? I'm Jez Higgins, a jobbing programmer who has had an on-again
 off-again relationship with C++ for over 25 years. I'll try to bring
 some answers.
 
-<sup>+</sup> Ideally, you'll have either CLion or Visual Studio Code (with the
-C/C++ and CMake Tools extensions) installed beforehand. CLion has a 30
-day trial license, while Visual Studio Code is free. Don't worry if not,
-just arrive a few minutes early and I'll try to sort you out.
+<sup>+</sup> Ideally, you'll have either [CLion](https://www.jetbrains.com/clion/)
+ or [Visual Studio Code (with the
+C/C++ and CMake Tools extensions)](https://code.visualstudio.com/docs/languages/cpp) 
+installed beforehand. CLion has a 30 day trial license, while Visual Studio Code is free. 
+Don't worry if not, just arrive a few minutes early and I'll try to sort you out. If you're a 'vi'/emacs/Sublime/anything-else user, that's fine too - but you will need a C++ compiler and CMake installed on your system. In general, if you're on a Unix-like system you probably do, and if you're on Windows you probably don't.
 
 ----
 
