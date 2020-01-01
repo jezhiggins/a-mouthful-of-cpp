@@ -1,0 +1,12 @@
+[data-transition=none]
+== A Mouthful of {cpp}
+*_What Blockchains Are And Why They're Terrible_*
+
+image::illuminated-by-monitor-light.jpg["Illuminated By Monitor Light"]
+
+Jez Higgins
+
+[NOTE.speaker]
+--
+Hello everyone. I'm Jez.
+--

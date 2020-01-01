@@ -1,0 +1,13 @@
+== THANKS
+
+image::business-card-front.png["Jez UK", float="right", margin=0]
+
+Jez Higgins
+
+@jezhiggins
+
+[NOTE.speaker]
+--
+I hope I've given you at least a taste of
+{cpp} - that you have the flavour in your mouth and it's not too unpleasant.
+--

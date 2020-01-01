@@ -1,0 +1,8 @@
+:revealjs_center: false
+:revealjs_progress: false
+
+include::slides/hello.adoc[]
+
+include::slides/thanks.adoc[]
+
+:imagesdir: images
