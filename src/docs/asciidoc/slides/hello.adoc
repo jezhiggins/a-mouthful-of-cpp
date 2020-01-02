@@ -11,11 +11,49 @@ Hello everyone. I'm Jez and this is a mouthful of {cpp}.
 
 Often, when people start a talk or whatever, they open with a little bit to qualify why they're there and from what authority they speak. You know the kind of thing - I work for so-and-so in the such-and-such team, here's a book I wrote about this very topic, or whatever. Now, I understand entirely why people do that, but I kind of shy away from that myself. I don't know about you, but I'm always a little bit wary of people who describe themselves as experts, even if I know that to be the case. While I think it is important to give a little bit of context about who you are, my default mode is more of an anti-qualification. So, my name's Jez and, as you can see, the grey-progression in my beard is well over half-way. I've been programming a long time, and I've worked on a lot of different things. My particular qualification for being here today is that Paul Grenyer asked me ("I've tried all the actual experts and they said no") and, when I was inclined to decline, Dom Davis persuaded me.
 
-I'm a decent hand at {cpp}, and I'm assuming you all are not? Great if you are. I'm also a fair-to-middling hand at most of the other mainstream languages too, and hopefully you are too. You all know your way around a programming language or two or three or N?
-
 Having listened to that introductory blurb, if anyone is now thinking "OMG I am in completely the wrong talk", it's entirely fine if you want to flee the room and go to one of the other sessions. Equally, if we get part way through and you've had enough, I will not be the slightest bit put out if you want to duck out. There's a lot going on this afternoon, and I'd hate anyone to be sitting here out of politeness or shyness or embarrassment. If you'd like to stay though, that's lovely.
 
 We're scheduled here this afternoon for just over two hours, which is simultaneously quite a long time and not very long at all. There isn't a hope in hell we can touch all the parts of {cpp}, or any language for that matter, but we can hopefully at least have a glance at enough to get you going.
 
 So, shall we crack on?
+--
+
+== A Mouthful of {cpp}
+
+image::who-are-you.jpg[]
+
+And you are?
+
+[NOTE.speaker]
+--
+I've given you a very brief idea of who I am, but can I ask who you are?
+
+Are you primarily JavaScript, Java, Python, something else? I just want to keep that in mind because unless you're working in something a bit wacky like Lisp or Smalltalk or Forth, C++ will have had an influence what you know (and potentially vice versa). If I have a little idea about what you're familiar with it'll help highlight similarities or differences between the two. Equally, there'd be no point saying "this is like X" if there's nobody here who uses it.
+--
+
+== {cpp}
+
+{cpp} is a general purpose programming language
+
+* it is multi-paradigm
+
+* compiled
+
+* strongly typed
+
+* statically typed
+
+[NOTE.speaker]
+--
+Multi-paradigm - what to work in a functional style? Go ahead. Object-orientation? Fine.
+
+Compiled - to machine code!
+
+Strongly typed - constants and variables have a type, and that type ain't changing
+
+Statically typed - those types are known at compile time
+
+Do sing out with questions as we go. This whole thing will be better if you do. I'm a decent hand at {cpp}, but one of the ways we learn is by teaching. There are, hopefully, things I can show you this afternoon, and there are definitely things you can teach me. If there's something that's not clear, or it sounds like I'm just talking nonsense, or, you know, you're just interested then please do ask and by the end of the afternoon we'll all come out with a better appreciation of the language than when we came in.
+
+Now I could carry on and give you another 100 minutes of slides, but we'd all be bored shitless in no time. Let's write some code, and we'll grow it from there.
 --
