@@ -31,29 +31,3 @@ I've given you a very brief idea of who I am, but can I ask who you are?
 Are you primarily JavaScript, Java, Python, something else? I just want to keep that in mind because unless you're working in something a bit wacky like Lisp or Smalltalk or Forth, C++ will have had an influence what you know (and potentially vice versa). If I have a little idea about what you're familiar with it'll help highlight similarities or differences between the two. Equally, there'd be no point saying "this is like X" if there's nobody here who uses it.
 --
 
-== {cpp}
-
-{cpp} is a general purpose programming language
-
-* it is multi-paradigm
-
-* compiled
-
-* strongly typed
-
-* statically typed
-
-[NOTE.speaker]
---
-Multi-paradigm - what to work in a functional style? Go ahead. Object-orientation? Fine.
-
-Compiled - to machine code!
-
-Strongly typed - constants and variables have a type, and that type ain't changing
-
-Statically typed - those types are known at compile time
-
-Do sing out with questions as we go. This whole thing will be better if you do. I'm a decent hand at {cpp}, but one of the ways we learn is by teaching. There are, hopefully, things I can show you this afternoon, and there are definitely things you can teach me. If there's something that's not clear, or it sounds like I'm just talking nonsense, or, you know, you're just interested then please do ask and by the end of the afternoon we'll all come out with a better appreciation of the language than when we came in.
-
-Now I could carry on and give you another 100 minutes of slides, but we'd all be bored shitless in no time. Let's write some code, and we'll grow it from there.
---

@@ -3,6 +3,8 @@
 
 include::slides/hello.adoc[]
 
+include::slides/what-is-cpp.adoc[]
+
 include::slides/thanks.adoc[]
 
 :imagesdir: images
