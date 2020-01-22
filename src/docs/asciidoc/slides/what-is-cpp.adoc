@@ -28,3 +28,8 @@ Do sing out with questions as we go. This whole thing will be better if you do. 
 
 Now I could carry on and give you another 100 minutes of slides, but we'd all be bored shitless in no time. Let's write some code, and we'll grow it from there.
 --
+
+* stack and heap - values vs references
+* types -> templates create new types
+* RAII
+* performance guarantees - both in library specifications, but also in features (don't pay for what you don't use)
