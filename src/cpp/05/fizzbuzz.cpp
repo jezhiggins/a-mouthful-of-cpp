@@ -1,0 +1,38 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <map>
+
+auto const Fizz = std::string { "Fizz" };
+auto const Buzz = std::string { "Buzz" };
+
+std::string fizz_buzz(int i);
+
+int main() {
+  auto numbers = std::vector { 1, 2, 3, 4, 5, 6, 7, 8, 13, 15, 17, 21, 25, 42 };
+
+  auto number_to_fb = std::map<int, std::string> { };
+
+  for (auto i : numbers)
+    number_to_fb[i] = fizz_buzz(i);
+
+  for (auto [ num, fb ] : number_to_fb)
+    std::cout << num << ' ' << fb << '\n';
+}
+
+std::string fizz_buzz(int i) {
+  if (i%3 == 0 && i%5 == 0)
+    return Fizz + Buzz;
+
+  if (i%3 == 0)
+    return Fizz;
+
+  if (i%5 == 0)
+    return Buzz;
+
+  return std::to_string(i);
+}
+
+// pull out make_fizzmap
+// references and values
+// const references?
