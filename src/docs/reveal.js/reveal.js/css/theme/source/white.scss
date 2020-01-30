@@ -6,8 +6,8 @@
 
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@import "css/theme/template/mixins";
+@import "css/theme/template/settings";
 // ---------------------------------------------
 
 
@@ -45,5 +45,5 @@ section.has-dark-background {
 
 
 // Theme template ------------------------------
-@import "../template/theme";
+@import "css/theme/template/theme";
 // ---------------------------------------------

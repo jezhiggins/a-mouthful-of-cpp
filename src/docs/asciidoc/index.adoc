@@ -1,3 +1,6 @@
+= A Mouthful of C++
+Jez Higgins <jez@jezuk.co.uk>
+2020-02-27
 :revealjs_center: false
 :revealjs_progress: false
 

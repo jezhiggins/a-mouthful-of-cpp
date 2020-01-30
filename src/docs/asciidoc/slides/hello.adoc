@@ -1,4 +1,3 @@
-[data-transition=none]
 == A Mouthful of {cpp}
 
 image::illuminated-by-monitor-light.jpg["Illuminated By Monitor Light"]
