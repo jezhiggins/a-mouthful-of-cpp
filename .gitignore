@@ -3,3 +3,6 @@ build
 .idea
 *.iml
 *.*~
+cmake-build-debug/
+00_hello_world
+01_fizzbuzz
