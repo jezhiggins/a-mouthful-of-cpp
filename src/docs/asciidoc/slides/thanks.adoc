@@ -11,3 +11,7 @@ Jez Higgins
 I hope I've given you at least a taste of
 {cpp} - that you have the flavour in your mouth and it's not too unpleasant.
 --
+
+== Acknowledgements
+
+Silhouette clipart from https://www.clipart.email/[clipart.email]

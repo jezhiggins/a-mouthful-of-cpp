@@ -21,7 +21,7 @@ Often, when people start a talk or whatever, they open with a little bit to qual
 
 == A Mouthful of {cpp}
 
-image::who-are-you.jpg[]
+image::who-are-you.jpeg["Silhouette face with overlaid question mark"]
 
 And you are?
 
