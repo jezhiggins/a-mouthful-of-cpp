@@ -38,3 +38,5 @@ std::string fizz_buzz(int i) {
 
   return std::to_string(i);
 }
+
+// output to file

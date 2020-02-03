@@ -19,5 +19,7 @@ int main() {
 // implicit conversion to bool (!(i%3))
 // progress output - number, then fizz, then buzz
 // ternary operator?
+// selection of numbers in a vector
+// loop over vector
 
 
