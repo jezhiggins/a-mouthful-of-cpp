@@ -2,12 +2,23 @@
 
 What is C++?
 
+[NOTE.speaker]
+--
+What, then, is C++?
+
+That's a pretty open ended question, so instead I'd like to start with ...
+
+What do you think C++ is?
+--
+
 == {cpp}
 
 What do you think C++ is?
 
 [NOTE.speaker]
 --
+Or, perhaps, what do you think of C++?
+
 All languages have a degree of rumour and hearsay around them - often of the form "nobody uses that anymore", "it's really complicated" (eg Perl, Ruby, XSLT, Cobol) - and less commonly, "the people who use are all snobs and weirdos" (Lisp, Haskell, C++).
 
 But what do you think C++ is? What's it's used for, or what you've heard about working in it or anything like that.

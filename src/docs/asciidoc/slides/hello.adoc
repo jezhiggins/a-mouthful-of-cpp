@@ -8,7 +8,7 @@ Jez Higgins
 --
 Hello everyone. I'm Jez and this is a mouthful of {cpp}.
 
-We're scheduled here this afternoon for just over two hours, which is simultaneously quite a long time and not very long at all. There isn't a hope in hell we can touch all the parts of {cpp}, or any language for that matter, but we can hopefully at least have a glance at enough to get you going.
+We're scheduled here this afternoon for just over two hours, which is simultaneously quite a long time and not very long at all. There isn't a hope in hell we can touch all the parts of {cpp}, or any language for that matter, but we can hopefully at least have a little look at enough to get you going.
 
 It would be very easy, but desperately boring for all of us, if I stood up here and went through slide after slide on C++. I do have some stuff prepared, but I think - I hope - it'll be more useful and fun if we mix things up - talk about some stuff, write some code, we can see how we go. Give you, as the session title suggests, a bit of taste of C++.
 
@@ -16,7 +16,7 @@ Having listened to that introductory blurb, if anyone is now thinking "OMG I am 
 
 So, shall we crack on?
 
-Often, when people start a talk or whatever, they open with a little bit to qualify why they're there and from what authority they speak. You know the kind of thing - I work for so-and-so in the such-and-such team, here's a book I wrote about this very topic, or whatever. Now, I understand entirely why people do that, but I kind of shy away from that myself. I don't know about you, but I'm always a little bit wary of people who describe themselves as experts, even if I know that to be the case. While I think it is important to give a little bit of context about who you are, my default mode is more of an anti-qualification. So, my name's Jez and, as you can see, the grey-progression in my beard is well over half-way. I've been programming a long time, and I've worked on a lot of different things. My particular qualification for being here today is that Paul Grenyer asked me ("I've tried all the actual experts and they said no") and, when I was inclined to decline, Dom Davis persuaded me.
+[[Often, when people start a talk or whatever, they open with a little bit to qualify why they're there and from what authority they speak. You know the kind of thing - I work for so-and-so in the such-and-such team, here's a book I wrote about this very topic, or whatever. Now, I understand entirely why people do that, but I kind of shy away from that myself. I don't know about you, but I'm always a little bit wary of people who describe themselves as experts, even if I know that to be the case. While I think it is important to give a little bit of context about who you are, my default mode is more of an anti-qualification. So, my name's Jez and, as you can see, the grey-progression in my beard is well over half-way. I've been programming a long time, and I've worked on a lot of different things. My particular qualification for being here today is that Paul Grenyer asked me ("I've tried all the actual experts and they said no") and, when I was inclined to decline, Dom Davis persuaded me.]]
 --
 
 == A Mouthful of {cpp}
@@ -30,4 +30,6 @@ And you are?
 I've given you a very brief idea of who I am, but can I ask who you are?
 
 Are you primarily JavaScript, Java, Python, something else? I just want to keep that in mind because unless you're working in something a bit wacky like Lisp or Smalltalk or Forth, C++ will have had an influence what you know (and potentially vice versa). If I have a little idea about what you're familiar with it'll help highlight similarities or differences between the two. Equally, there'd be no point saying "this is like X" if there's nobody here who uses it.
+
+What kind of applications do you work on?
 --
