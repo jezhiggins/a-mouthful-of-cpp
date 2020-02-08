@@ -112,7 +112,30 @@ Is everyone comfortable with what those things mean.
 
 === Multi-paradigm
 
-Multi-paradigm - what to work in a functional style? Go ahead. Object-orientation? Fine.
+image::multi-paradigm-design-for-cpp.jpg['Multi-Paradigm Design for C++']
+
+[NOTE.speaker]
+--
+Nearly all programming languages are, to some extent, multi-paradigm - they don't force you to program in one particular way. However, some languages certainly give a pretty strong steer in a particular direction. It would not, for instance, be controversial to say "Java *is* an object-oriented programming language" or that "Lisp *is* a function programming language". (There are lots of arguments about what Lisp is, but that isn't one of them.) C++ has always rejected that and aimed to be a general purpose language, and being general purporse you have to support the code that people want to write.
+
+C++ provides language or standard library support for procedural programming, object-oriented programming, generic programming, compile-time meta-programming, there's support common for contracts, and there's decent language and library support for concurrent programming.
+
+But don't take my word for it ... he's Jim Coplien's 1999 book on it. The word design is all-capped because his contention was that C++ offered you this array of programming styles, but people generally picked one and went with that. In 1999 that would almost certainly have been OO. He advanced the idea that most problems don't fall neatly into one category like that, and so you need to draw on all the tools available to you. I'm probably horribly over simplifying, so I'd be grateful if no one repeats what I've just said to Cope, because he frightens me :)
+--
+
+=== Multi-paradigm
+
+[quote, Bjarne Stroustrup]
+--
+Multiparadigm programming is a fancy way of saying "`programming using more than one programming style, each to its best effect.`"
+
+We need a better -- more descriptive -- term to replace "`multi-paradigm`".
+--
+
+[NOTE.speaker]
+--
+He continues "For example, using object-oriented programming when run-time resolution between different object types is required and generic programming when static type safety and run-time performance is at a premium. Naturally, the main strength of multiparadigm programming is in programs where more than one paradigm (programming style) is used, so that it would be hard to get the same effect by composing a system out of parts written in languages supporting different paradigms. I find the most compelling cases for multiparadigm programming are found where techniques from different paradigms are used in close collaboration to write code that is more elegant and more maintainable than would be possible within a single paradigm."
+--
 
 === Compiled
 
