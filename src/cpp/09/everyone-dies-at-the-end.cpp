@@ -15,7 +15,7 @@ public:
 };
 
 int main() {
-  auto brian = mayfly();
+  auto brian = mayfly { };
 
   brian.eat();
 }
