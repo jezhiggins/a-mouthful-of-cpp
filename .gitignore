@@ -6,5 +6,6 @@ build
 cmake-build-debug/
 00_hello_world
 0?_fizzbuzz*
+1?_fizzbuzz*
 09_mayfly
 fizzbuzz.txt

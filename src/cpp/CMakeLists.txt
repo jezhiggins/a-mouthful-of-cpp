@@ -23,3 +23,5 @@ add_executable(07_fizzbuzz_to_file 07/fizzbuzz-to-file.cpp)
 add_executable(08_fizzbuzz_out 08/fizzbuzz-out.cpp)
 
 add_executable(09_mayfly 09/everyone-dies-at-the-end.cpp)
+
+add_executable(10_fizzbuzz_generator 10/fizzbuzz-generator.cpp)
