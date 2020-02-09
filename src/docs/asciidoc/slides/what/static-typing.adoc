@@ -1,0 +1,77 @@
+=== Statically Typed
+
+Constants and variables have a type, and that type doesn't change
+
+The type of a variable is known at creation time.
+
+[NOTE.speaker]
+--
+
+--
+
+=== Statically Typed
+
+[source,javascript]
+--
+let a = 1
+...
+a = 'Fish'
+...
+a = {
+name: 'Peppa',
+animal: 'Pig'
+}
+--
+
+[NOTE.speaker]
+--
+In this little snippet of JavaScript (bad JavaScript, don't write JavaScript
+like this), my poorly named variable 'a' changes type several times during the
+course of my program.
+
+It starts out as a Number (not an integer!), then later it becomes a string,
+then later still, it's an object.  What's more, the number and the string are
+values, and but this last one is a reference to the object.
+--
+
+=== Dynamically Typed
+
+[source,javascript]
+--
+let a = 1
+...
+a = 'Fish'
+...
+a = new KidsFavourite("Peppa", "Pig")
+
+// more code
+
+make_into_sausages(a)
+--
+
+[NOTE.speaker]
+--
+Can we say anything about this? Can we look at the call and know if it makes
+sense? Well, no, not without running the code.
+--
+
+=== !
+
+[source,cpp]
+--
+auto a = 1
+...
+a = std::string { "Fish" }
+--
+
+[NOTE.speaker]
+--
+In a statically typed language like C++ (other statically typed languages are
+available), this is an error at compile time. The code simply won't compile, so you
+aren't able to run it.
+
+This eliminates a whole class of bugs. It also means that you end up thinking
+about the types you need a bit more. With Python or JavaScript or PHP or whatever,
+we can often go quite a long way just with array and maps, right. We just poke things
+in there and we're fine. Your C++ will look different :)
+--

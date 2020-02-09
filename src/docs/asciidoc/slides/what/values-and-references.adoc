@@ -1,0 +1,71 @@
+=== Values and References
+
+[source,javascript]
+--
+a = 1
+
+b = a
+--
+
+[NOTE.speaker]
+--
+The other key way C++ differs from JavaScript, Java, C#, and they way it deals with
+values and references.
+--
+
+=== Values and References
+
+[source,javascript]
+--
+a = 1
+
+b = a
+
+b = b + 1
+--
+
+[NOTE.speaker]
+--
+If we do this, what's the value of a and b?
+
+So, here, a and b have value semantics. If I do something to a, b doesn't change
+and if I do something to b, a isn't affected.
+--
+
+=== Values and References
+
+[source,javascript]
+--
+a = { name: "Peppa", animal: "Pig" }
+
+b = a
+--
+
+[NOTE.speaker]
+--
+What about now?
+--
+
+=== Values and References
+
+[source,javascript]
+--
+a = { name: "Peppa", animal: "Pig" }
+
+b = a
+
+b.name = 'Daddy'
+--
+
+[NOTE.speaker]
+--
+What about this? What do a and b look like now.
+
+Here, they have reference semantics. a and b refer to the same object,
+somewhere off in memory.  If I perform some operation on the object, both a and b
+see that.
+
+And we're comfortable with that, right. We see that same thing with other languages,
+Java, Python, C#, and so on. (C# structs have value sematics, the new Java records will too I think)
+--
+

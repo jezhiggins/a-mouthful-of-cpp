@@ -1,0 +1,21 @@
+== !
+
+C++ is not garbage collected
+
+[NOTE.speaker]
+--
+OK with this?
+
+Those of you old enough to remember when Java was launched - maybe none of you - might recall that one of Java's big selling points was "it was simpler than C++", and one of the reasons given for that was "it was garbage collected".
+
+Need to create a bunch of objects? Well, just create those bad boys. It'll be fine. The GC will come through later on and tidy everything up for you.
+--
+
+== !
+
+C++ objects have a defined lifetime
+
+[NOTE.speaker]
+--
+When we create objects in C++, we know when those objects are going to die. (*Mostly.)
+--

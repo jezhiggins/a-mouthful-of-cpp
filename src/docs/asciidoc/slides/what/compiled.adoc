@@ -1,0 +1,38 @@
+=== Compiled
+
+[ditaa, "compile", "svg"]
+--
+
+ +--------------+                                +--------------+                                /--------------\
+ |              |        +--------------+        |              |        +--------------+        |              |
+ |              |        |              |        |              |        |              |        |              |
+ |              |        |              |        |              |        |              |        |              |
+ |    Source    |  --->  |   Compiler   |  --->  |    Object    |  --->  |    Linker    |  --->  |   Program    |
+ |     code     |        |              |        |     file     |        |              |        |              |
+ |              |        |              |        |              |        |              |        |              |
+ |           {d}|        +--------------+        |           {d}|        +--------------+        |              |
+ +--------------+                                +--------------+                                \--------------/
+                                                                                 ^
+                                                                                 |
+                                                                                 |
+
+                                                                         +--------------+
+                                                                         |              |
+                                                                         |  Libraries   |
+                                                                         |           {d}|
+                                                                         +--------------+
+--
+
+[NOTE.speaker]
+--
+
+Compiled - to machine code!
+
+Perl, Ruby, Python, JavaScript - just run them! Source is portable.
+
+(Ok, we have some kind of bundling stage with JavaScript, but it's not compilation. Python spits out .pyc files of its byte code, but you don't distribute those and you could go your whole life without ever seeing them. This is not the case here.)
+
+Java, C# - compiled to byte code, run that on a JVM. Bytecode is portable. (Might hotspot compiled to machine code on the fly, but that isn't part of the delivered executable.)
+
+C++, Go, Rust - compiled to machine code.  Source can be portable, executables are not.
+--
