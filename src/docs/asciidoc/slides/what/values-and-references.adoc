@@ -9,34 +9,34 @@ b = a
 
 [NOTE.speaker]
 --
-The other key way C++ differs from JavaScript, Java, C#, and they way it deals with
-values and references.
+The other key way C++ differs from JavaScript, Java, C#, and they way it deals with values and references.
 --
 
 === Values and References
 
-[source,javascript]
+[source,python]
 --
 a = 1
 
 b = a
 
-b = b + 1
+b += 2
 --
 
 [NOTE.speaker]
 --
+(What language is this?  It's JavaScript, but could be more or less anything)
+
 If we do this, what's the value of a and b?
 
-So, here, a and b have value semantics. If I do something to a, b doesn't change
-and if I do something to b, a isn't affected.
+So, here, a and b have value semantics. If I do something to a, b doesn't change and if I do something to b, a isn't affected.
 --
 
 === Values and References
 
 [source,javascript]
 --
-a = { name: "Peppa", animal: "Pig" }
+a = [1, 2, 3, 4]
 
 b = a
 --
@@ -50,22 +50,94 @@ What about now?
 
 [source,javascript]
 --
-a = { name: "Peppa", animal: "Pig" }
+a = [1, 2, 3, 4]
 
 b = a
 
-b.name = 'Daddy'
+b[1] = 99
 --
 
 [NOTE.speaker]
 --
 What about this? What do a and b look like now.
 
-Here, they have reference semantics. a and b refer to the same object,
-somewhere off in memory.  If I perform some operation on the object, both a and b
-see that.
+Here, they have reference semantics. a and b refer to the same object, somewhere off in memory.  If I perform some operation on the object, both a and b see that.
 
-And we're comfortable with that, right. We see that same thing with other languages,
-Java, Python, C#, and so on. (C# structs have value sematics, the new Java records will too I think)
+And we're comfortable with that, right. We see that same thing with other languages, Java, Python, C#, and so on.
+
+Some types - boolean, integers, strings, often called the builtin types - behave like values, but everything else - objects, arrays, tuples, dicts - behave like references.
+
+(C# structs have value sematics, the new Java records will too I think)
 --
 
+=== Values ...
+
+[source,cpp]
+--
+auto a = 1;
+
+auto b = a;
+
+b += 2;
+--
+
+[NOTE.speaker]
+--
+Same as before, right? a is 1 and b = 3.
+--
+
+=== Values ...
+
+[source,cpp]
+--
+auto a = std::vector<int> { 1, 2, 3, 4 };
+
+auto b = a;
+
+b[1] = 99;
+--
+
+[NOTE.speaker]
+--
+I've probably tipped my hand here, but any guesses?
+
+b is a copy of a, so anything I do to b doesn't change a at all
+--
+
+=== ... and References
+
+[source,cpp]
+--
+auto a = std::vector<int> { 1, 2, 3, 4 };
+
+auto& b = a;
+
+b[1] = 99;
+--
+
+[NOTE.speaker]
+--
+And now?
+
+Here, I've explicitly said I want a reference, so now b refers to a, and anything I do to b is actually happening to a.
+--
+
+=== ... and References
+
+[source,cpp]
+--
+auto a = 1;
+
+auto& b = a;
+
+b += 2;
+--
+
+[NOTE.speaker]
+--
+Ah, I can also apply reference sematics to built in types like integers.
+
+So, in C++, I can have both value semantics and reference semantics. They're not implicit in the thing I'm working with - I can choose, for whatever suits the situation best.
+
+Is that all fairly clear?
+--

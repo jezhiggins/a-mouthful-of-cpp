@@ -1,12 +1,25 @@
 === Statically Typed
 
-Constants and variables have a type, and that type doesn't change
+Variables have a type
 
-The type of a variable is known at creation time.
+The type is known at creation time
+
+The type doesn't change
+
 
 [NOTE.speaker]
 --
+Static typing in C++ - you might also have heard people talking about strong typing - means the following
 
+variables have a type,
+
+the type is known at the point the variable is created (not when its initialised)
+
+the type of the variable doesn't change
+
+If you think about the consequences of that for a moment ...
+
+Types - the data structures, the objects, whatever we want to call them are important to how we program in C++.  You program will have a lot of types.
 --
 
 === Statically Typed
@@ -18,20 +31,18 @@ let a = 1
 a = 'Fish'
 ...
 a = {
-name: 'Peppa',
-animal: 'Pig'
+  name: 'Peppa',
+  animal: 'Pig'
 }
 --
 
 [NOTE.speaker]
 --
-In this little snippet of JavaScript (bad JavaScript, don't write JavaScript
-like this), my poorly named variable 'a' changes type several times during the
-course of my program.
+In this little snippet of JavaScript (bad JavaScript, don't write JavaScript like this), my poorly named variable 'a' changes type several times during the course of my program.
 
-It starts out as a Number (not an integer!), then later it becomes a string,
-then later still, it's an object.  What's more, the number and the string are
-values, and but this last one is a reference to the object.
+It starts out as a Number (not an integer!), then later it becomes a string, then later still, it's an object.  What's more, the number and the string are values, and but this last one is a reference to the object.
+
+In all JavaScript has 6 types - undefined, boolean, number, string, object, function.  Even things like arrays and regexes are objects.  If I define a class in JavaScript, those objects are still just objects.
 --
 
 === Dynamically Typed
@@ -51,8 +62,9 @@ make_into_sausages(a)
 
 [NOTE.speaker]
 --
-Can we say anything about this? Can we look at the call and know if it makes
-sense? Well, no, not without running the code.
+Can we say anything about this? Can we look at the call and know if it makes sense? Well, no, not without running the code.
+
+A language like Python is a little more sophisticated - dicts, lists and tuples are separate types, for example - but the type system is still dynamic. The type of a variable can change over time, and annotations aside, there's nothing in the type system which stops you say, passing an integer to a function that really wants a string.
 --
 
 === !
@@ -61,17 +73,98 @@ sense? Well, no, not without running the code.
 --
 auto a = 1
 ...
-a = std::string { "Fish" }
+auto s = std::string { "Fish" }
+...
 --
 
 [NOTE.speaker]
 --
-In a statically typed language like C++ (other statically typed languages are
-available), this is an error at compile time. The code simply won't compile, so you
-aren't able to run it.
+In a statically typed language like C++ (other statically typed languages are available), the type is known from the moment the variable is created, and it doesn't change.
 
-This eliminates a whole class of bugs. It also means that you end up thinking
-about the types you need a bit more. With Python or JavaScript or PHP or whatever,
-we can often go quite a long way just with array and maps, right. We just poke things
-in there and we're fine. Your C++ will look different :)
+In this little snippet, we're letting the compiler deduce the types for us, but the point is they're still known.
 --
+
+=== !
+
+[source,cpp]
+--
+int a = 1
+...
+std::string s = "Fish"
+...
+--
+
+[NOTE.speaker]
+--
+You could also write that code like this. The modern preference is for auto - it's less typing all round, and generally more correct.
+--
+
+=== !
+
+[source,cpp]
+--
+std::string frobulate(int i);
+...
+auto t = frobulate(99);
+--
+
+[NOTE.speaker]
+--
+The type system extends throughout your program.
+
+Here, I've declared a function - it wants an integer, and it returns a string. If I call it like this, everything is fine. My 99 goes in, I get a string back, the type of t is std::string. Everything's good.
+--
+
+=== !
+
+[source,cpp]
+--
+std::string frobulate(int i);
+...
+auto t = frobulate(99.5);
+--
+
+[NOTE.speaker]
+--
+But if I do this ... well, the compiler's going to complain. 99.5 isn't an integer, so it's just going to stop and say "what are you doing"?
+
+Converting a floating point to an integer isn't safe - if I want that to happen, I have to be explicit about it.
+--
+
+=== !
+
+[source,cpp]
+--
+std::string frobulate(int i);
+...
+if (!frobulate(99)) {
+  // ...
+}
+--
+
+[NOTE.speaker]
+--
+This works in other ways too - an if statement expects a boolean expression. A std::string isn't a boolean, so again our compiler will choke.
+--
+
+=== !
+
+[source,cpp]
+--
+std::string frobulate(int i);
+...
+if (!frobulate(99).empty()) {
+  // ...
+}
+--
+
+[NOTE.speaker]
+Perhaps I meant something like this.
+
+This eliminates a whole class of bugs. It also means that you end up thinking about the types you need a bit more.
+
+I'm not suggesting that when we work in JavaScript or Python or whatever, we're just slinging stuff together and using a variable as an integer one moment and a string the next. But, you know, we've all written a function that returned a string most of the time, and then returned false if that lookup (or whatever) failed, right?
+
+With Python or JavaScript or PHP or whatever, we can often go quite a long way just with array and maps, right. We just poke things in there and we're fine. Your C++ will look different :)
+--
+
