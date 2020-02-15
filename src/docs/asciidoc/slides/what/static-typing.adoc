@@ -159,6 +159,7 @@ if (!frobulate(99).empty()) {
 --
 
 [NOTE.speaker]
+--
 Perhaps I meant something like this.
 
 This eliminates a whole class of bugs. It also means that you end up thinking about the types you need a bit more.

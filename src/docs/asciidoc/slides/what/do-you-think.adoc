@@ -61,21 +61,3 @@ I'm not your audience because I jumped OOP
 Why?
 --
 
-== {cpp}
-
-{cpp} is a general purpose programming language
-
-[NOTE.speaker]
---
-This is a pretty high-level statement right?
-
-General is pretty vague, right? "Well, you can just use it for, you know, stuff". We can think of languages which aren't general - SQL, for instance, or XSLT which are really quite narrowly focussed. We can think about something like R or MATLAB which are particularly aimed at numerical analysis. That's wider than, say, the query focus of SQL, but it's not "general", general.
-
-For C++, when we talk about general purpose, we mean from the operating system up - that you can write any part of you software from the very lowest level right up to the user interface on the front, whether that user interface is a desktop application, a web browser, or a couple of seven segment displays and a couple of LEDs on your washing machine.
-
-You might also hear this called "systems programming".
-
-To span that range of, I was going to say applications, different uses, what do you think you want for, need in, a language?
-
-Languages in a similar space - Rust, Go, Ada, D, C.
---
