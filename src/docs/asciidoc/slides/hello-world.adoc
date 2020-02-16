@@ -11,6 +11,8 @@ int main() {
 [NOTE.speaker]
 --
 Here is the minimal C++ program.
+
+You know what's coming next right?
 --
 
 == Hello, World!

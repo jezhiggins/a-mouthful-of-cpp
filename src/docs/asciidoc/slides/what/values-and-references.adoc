@@ -135,9 +135,11 @@ b += 2;
 
 [NOTE.speaker]
 --
-Ah, I can also apply reference sematics to built in types like integers.
+Ah, I can also apply reference semantics to built in types like integers.
 
 So, in C++, I can have both value semantics and reference semantics. They're not implicit in the thing I'm working with - I can choose, for whatever suits the situation best.
+
+Notice that the choice of value or reference is separate from the declaration - it's not implicit in the thing, it's related to how you want to handle it. Need a copy - take a copy, need a reference - have a reference.
 
 Is that all fairly clear?
 --

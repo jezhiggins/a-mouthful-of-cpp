@@ -1,4 +1,19 @@
-=== !
+=== No Garbage Collection
 
-Something about not have GC here
+image::images/dont-panic.jpeg["Don't Panic"]
+
+[NOTE.speaker]
+--
+No, really, don't panic.
+
+This is the first time I have ever used a Don't Panic slide, or had an overt Hitchhikers reference, and I do kind of feel bad about that, but really don't panic.
+
+It's cool.
+
+Hopefully, as we get into some code, you won't even notice that it's an issue.
+
+Speaking of code, shall we look at some?  Some proper code?
+--
+
+
 
