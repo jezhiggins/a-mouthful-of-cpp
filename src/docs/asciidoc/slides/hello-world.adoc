@@ -1,12 +1,12 @@
 == Hello, World!
 
 [source,cpp]
---
+----
 
 int main() {
 }
 
---
+----
 
 [NOTE.speaker]
 --
@@ -22,7 +22,7 @@ You know what's coming next right?
 == Hello, World!
 
 [source,cpp]
---
+----
 
 #include <iostream>
 
@@ -30,7 +30,7 @@ int main() {
     std::cout << "Hello, World!\n";
 }
 
---
+----
 
 [NOTE.speaker]
 --
@@ -50,7 +50,7 @@ The semi-colon marks the end of the statement. None of the magical end of line n
 == FizzBuzz
 
 [source,cpp]
---
+----
 
 #include <iostream>
 
@@ -58,7 +58,7 @@ int main() {
     // insert code here
 }
 
---
+----
 
 [NOTE.speaker]
 --

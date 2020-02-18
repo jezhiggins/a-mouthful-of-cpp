@@ -1,11 +1,11 @@
 === Values and References
 
 [source,javascript]
---
+----
 a = 1
 
 b = a
---
+----
 
 [NOTE.speaker]
 --
@@ -15,13 +15,13 @@ The other key way C++ differs from JavaScript, Java, C#, and they way it deals w
 === Values and References
 
 [source,python]
---
+----
 a = 1
 
 b = a
 
 b += 2
---
+----
 
 [NOTE.speaker]
 --
@@ -35,11 +35,11 @@ So, here, a and b have value semantics. If I do something to a, b doesn't change
 === Values and References
 
 [source,javascript]
---
+----
 a = [1, 2, 3, 4]
 
 b = a
---
+----
 
 [NOTE.speaker]
 --
@@ -49,13 +49,13 @@ What about now?
 === Values and References
 
 [source,javascript]
---
+----
 a = [1, 2, 3, 4]
 
 b = a
 
 b[1] = 99
---
+----
 
 [NOTE.speaker]
 --
@@ -73,13 +73,13 @@ Some types - boolean, integers, strings, often called the builtin types - behave
 === Values ...
 
 [source,cpp]
---
+----
 auto a = 1;
 
 auto b = a;
 
 b += 2;
---
+----
 
 [NOTE.speaker]
 --
@@ -89,13 +89,13 @@ Same as before, right? a is 1 and b = 3.
 === Values ...
 
 [source,cpp]
---
+----
 auto a = std::vector<int> { 1, 2, 3, 4 };
 
 auto b = a;
 
 b[1] = 99;
---
+----
 
 [NOTE.speaker]
 --
@@ -107,13 +107,13 @@ b is a copy of a, so anything I do to b doesn't change a at all
 === ... and References
 
 [source,cpp]
---
+----
 auto a = std::vector<int> { 1, 2, 3, 4 };
 
 auto& b = a;
 
 b[1] = 99;
---
+----
 
 [NOTE.speaker]
 --
@@ -125,13 +125,13 @@ Here, I've explicitly said I want a reference, so now b refers to a, and anythin
 === ... and References
 
 [source,cpp]
---
+----
 auto a = 1;
 
 auto& b = a;
 
 b += 2;
---
+----
 
 [NOTE.speaker]
 --

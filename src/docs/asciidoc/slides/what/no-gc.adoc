@@ -1,6 +1,6 @@
 === No Garbage Collection
 
-image::images/dont-panic.jpeg["Don't Panic"]
+image::dont-panic.jpg["Don't Panic"]
 
 [NOTE.speaker]
 --

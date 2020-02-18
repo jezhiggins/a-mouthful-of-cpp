@@ -25,7 +25,7 @@ Types - the data structures, the objects, whatever we want to call them are impo
 === Statically Typed
 
 [source,javascript]
---
+----
 let a = 1
 ...
 a = 'Fish'
@@ -34,7 +34,7 @@ a = {
   name: 'Peppa',
   animal: 'Pig'
 }
---
+----
 
 [NOTE.speaker]
 --
@@ -48,7 +48,7 @@ In all JavaScript has 6 types - undefined, boolean, number, string, object, func
 === Dynamically Typed
 
 [source,javascript]
---
+----
 let a = 1
 ...
 a = 'Fish'
@@ -58,7 +58,7 @@ a = new KidsFavourite("Peppa", "Pig")
 // more code
 
 make_into_sausages(a)
---
+----
 
 [NOTE.speaker]
 --
@@ -70,12 +70,12 @@ A language like Python is a little more sophisticated - dicts, lists and tuples 
 === !
 
 [source,cpp]
---
+----
 auto a = 1
 ...
 auto s = std::string { "Fish" }
 ...
---
+----
 
 [NOTE.speaker]
 --
@@ -87,12 +87,12 @@ In this little snippet, we're letting the compiler deduce the types for us, but 
 === !
 
 [source,cpp]
---
+----
 int a = 1
 ...
 std::string s = "Fish"
 ...
---
+----
 
 [NOTE.speaker]
 --
@@ -102,11 +102,11 @@ You could also write that code like this. The modern preference is for auto - it
 === !
 
 [source,cpp]
---
+----
 std::string frobulate(int i);
 ...
 auto t = frobulate(99);
---
+----
 
 [NOTE.speaker]
 --
@@ -118,11 +118,11 @@ Here, I've declared a function - it wants an integer, and it returns a string. I
 === !
 
 [source,cpp]
---
+----
 std::string frobulate(int i);
 ...
 auto t = frobulate(99.5);
---
+----
 
 [NOTE.speaker]
 --
@@ -134,13 +134,13 @@ Converting a floating point to an integer isn't safe - if I want that to happen,
 === !
 
 [source,cpp]
---
+----
 std::string frobulate(int i);
 ...
 if (!frobulate(99)) {
   // ...
 }
---
+----
 
 [NOTE.speaker]
 --
@@ -150,13 +150,13 @@ This works in other ways too - an if statement expects a boolean expression. A s
 === !
 
 [source,cpp]
---
+----
 std::string frobulate(int i);
 ...
 if (!frobulate(99).empty()) {
   // ...
 }
---
+----
 
 [NOTE.speaker]
 --
