@@ -10,7 +10,7 @@ int main() {
 
 [NOTE.speaker]
 --
-Where do we start with our minimal C++ program? In the same place as every C++ program - in the `main` function. A C++ program must have a main function, and it must have only one.
+Where do we start with our minimal {cpp} program? In the same place as every {cpp} program - in the `main` function. A {cpp} program must have a main function, and it must have only one.
 
 Slightly curiously, main isn't a keyword. `int` is though - its the integer data type.
 
@@ -38,7 +38,7 @@ Hello world!
 
 That's right.
 
-In C++, input and output are part of the standard library, rather than intrinsic to the language. To use a library, whether part of the standard, a third party, or one of our own devising, we include its header file.  Here, iostream provides the standard console output and input.
+In {cpp}, input and output are part of the standard library, rather than intrinsic to the language. To use a library, whether part of the standard, a third party, or one of our own devising, we include its header file.  Here, iostream provides the standard console output and input.
 
 In this very simple program, we just need the output - std::cout, pronounced "stood see-out".
 
@@ -62,9 +62,9 @@ int main() {
 
 [NOTE.speaker]
 --
-I reckon you know have enough information to write a C++ program.
+I reckon you know have enough information to write a {cpp} program.
 
-You're all familiar with FizzBuzz right? (Why are we doing FizzBuzz? Because it's not a real problem. We're not trying to derive new computer science, we're trying to get a feel for C++).
+You're all familiar with FizzBuzz right? (Why are we doing FizzBuzz? Because it's not a real problem. We're not trying to derive new computer science, we're trying to get a feel for {cpp}).
 
 So fire up those IDEs, wizard up an empty project, and let's get going :)
 

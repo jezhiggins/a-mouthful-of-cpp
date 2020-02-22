@@ -1,14 +1,14 @@
 == {cpp}
 
-What is C++?
+What is {cpp}?
 
 [NOTE.speaker]
 --
-What, then, is C++?
+What, then, is {cpp}?
 
 That's a pretty open ended question, so instead I'd like to start with ...
 
-What do you think C++ is?
+What do you think {cpp} is?
 --
 
 include::what/do-you-think.adoc[]
@@ -23,7 +23,7 @@ This is a pretty high-level statement right?
 
 General is pretty vague, right? "Well, you can just use it for, you know, stuff". We can think of languages which aren't general - SQL, for instance, or XSLT which are really quite narrowly focused. We can think about something like R or MATLAB which are particularly aimed at numerical analysis. That's wider than, say, the query focus of SQL, but it's not "general", general.
 
-For C++, when we talk about general purpose, we mean from the operating system up - that you can write any part of you software from the very lowest level right up to the user interface on the front, whether that user interface is a desktop application, a web browser, or a couple of seven segment displays and a couple of LEDs on your washing machine.
+For {cpp}, when we talk about general purpose, we mean from the operating system up - that you can write any part of you software from the very lowest level right up to the user interface on the front, whether that user interface is a desktop application, a web browser, or a couple of seven segment displays and a couple of LEDs on your washing machine.
 
 You might also hear this called "systems programming".
 
@@ -36,18 +36,18 @@ Languages in a similar space - Rust, Go, Ada, D, C.
 
 [quote, Bjarne Stroustrup]
 --
-In general, C++ implementations obey the zero-overhead principle: What you don't use, you don't pay for. And further: What you do use, you couldn't hand code any better.
+In general, {cpp} implementations obey the zero-overhead principle: What you don't use, you don't pay for. And further: What you do use, you couldn't hand code any better.
 --
 
 [NOTE.speaker]
 --
-C++ is unusual, it seems to me, in that it's always had a pretty clear target - systems programming - and design philosophy - don't pay for what you don't use - and those things are still true.
+{cpp} is unusual, it seems to me, in that it's always had a pretty clear target - systems programming - and design philosophy - don't pay for what you don't use - and those things are still true.
 
-Java, when launched was pitched as a kind of simpler C++ - take all the bits people seem to have problems with, your problems will be solved, your undertrained programmers will suddenly be great. It would be rather hard to make that claim about Java now.
+Java, when launched was pitched as a kind of simpler {cpp} - take all the bits people seem to have problems with, your problems will be solved, your undertrained programmers will suddenly be great. It would be rather hard to make that claim about Java now.
 
 JavaScript's target was tiny bits of user interaction in webpages, and well, ... look where we are now. And so on.
 
-This isn't to denigrate any of these other languages, or the people who work on them, or with them. However, we are in session about C++ for people who program in other languages, and so some comparisons and contrasts are inevitable.
+This isn't to denigrate any of these other languages, or the people who work on them, or with them. However, we are in session about {cpp} for people who program in other languages, and so some comparisons and contrasts are inevitable.
 
 That principle leads the language in a particular ways, not in small ways like "where do the brackets go", but deep foundational ways. In particular
 --
@@ -64,9 +64,9 @@ That principle leads the language in a particular ways, not in small ways like "
 
 [NOTE.speaker]
 --
-One of the guiding principles of C++ in the design and evolution of the language is "you don't pay for what you don't use"
+One of the guiding principles of {cpp} in the design and evolution of the language is "you don't pay for what you don't use"
 
-More specifically, C++ is a general purpose programming language which is multi-paradigm, compiled, strongly and statically typed.
+More specifically, {cpp} is a general purpose programming language which is multi-paradigm, compiled, strongly and statically typed.
 
 Is everyone comfortable with what those things mean.
 --

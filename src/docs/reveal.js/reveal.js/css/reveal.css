@@ -197,6 +197,9 @@ body {
   max-height: 100%;
   box-sizing: border-box; }
 
+.CodeRay {
+  font-size: larger;
+}
 /*********************************************
  * CONTROLS
  *********************************************/

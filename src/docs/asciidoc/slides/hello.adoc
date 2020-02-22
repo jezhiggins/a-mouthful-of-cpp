@@ -6,17 +6,15 @@ Jez Higgins
 
 [NOTE.speaker]
 --
-Hello everyone. I'm Jez and this is a mouthful of {cpp}.
+Hello everyone. I'm Jez and this is a mouthful of {cpp}. You know how people often start with a little section on who they are - I used to fiercely resist that basically because I found it really difficult, but in the end I realised it's actually kind of reassuring for the audience. So, here goes. Hello again! I'm Jez, and I'm a jobbing programmer who's being working on and off in {cpp} for quite a long time, coming up for 30 years. I am competent in {cpp} - I'm not on the standards committee (although I know people who are), I haven't written any books (although I know people who have), I haven't written any libraries that hold the internet up (although, again, I know people who have) - I just a bloke who's done a lot of programming. These days, a reasonable chunk of what I do is software grandadding - write a bit of code, give people a bit of leg up with, say, TDD, prod around with the build, and making sure people don’t fall down the old mine shaft. That's kind of why I'm here today - Paul thought "who do I know who's old and unthreatening who can talk about {cpp}?", and here I am.
 
-We're scheduled here this afternoon for just over two hours, which is simultaneously quite a long time and not very long at all. There isn't a hope in hell we can touch all the parts of {cpp}, or any language for that matter, but we can hopefully at least have a little look at enough to get you going.
+We're scheduled here this afternoon for just over two hours, which is simultaneously quite a long time and not very long at all. There isn't a hope in hell we can touch all the parts of {cpp}, or any language for that matter, and in fact we don't have to but we can hopefully at least have a little look at enough to get you going.
 
-It would be very easy, but desperately boring for all of us, if I stood up here and went through slide after slide on C++. I do have some stuff prepared, but I think - I hope - it'll be more useful and fun if we mix things up - talk about some stuff, write some code, we can see how we go. Give you, as the session title suggests, a bit of taste of C++.
+It would be very easy, but desperately boring for all of us, if I stood up here and went through slide after slide on {cpp}. I do have some stuff prepared, but I think - I hope - it'll be more useful and fun if we mix things up - talk about some stuff, write some code, we can see how we go. Give you, as the session title suggests, a bit of taste of {cpp}.
 
 Having listened to that introductory blurb, if anyone is now thinking "OMG I am in completely the wrong talk", it's entirely fine if you want to flee the room and go to one of the other sessions. Equally, if we get part way through and you've had enough, I will not be the slightest bit offended if you want to duck out. There's a lot going on this afternoon, and I'd hate anyone to be sitting here out of politeness or shyness or embarrassment. If you'd like to stay though, that's lovely.
 
 So, shall we crack on?
-
-[[Often, when people start a talk or whatever, they open with a little bit to qualify why they're there and from what authority they speak. You know the kind of thing - I work for so-and-so in the such-and-such team, here's a book I wrote about this very topic, or whatever. Now, I understand entirely why people do that, but I kind of shy away from that myself. I don't know about you, but I'm always a little bit wary of people who describe themselves as experts, even if I know that to be the case. While I think it is important to give a little bit of context about who you are, my default mode is more of an anti-qualification. So, my name's Jez and, as you can see, the grey-progression in my beard is well over half-way. I've been programming a long time, and I've worked on a lot of different things. My particular qualification for being here today is that Paul Grenyer asked me ("I've tried all the actual experts and they said no") and, when I was inclined to decline, Dom Davis persuaded me.]]
 --
 
 == A Mouthful of {cpp}
@@ -29,7 +27,41 @@ And you are?
 --
 I've given you a very brief idea of who I am, but can I ask who you are?
 
-Are you primarily JavaScript, Java, Python, something else? I just want to keep that in mind because unless you're working in something a bit wacky like Lisp or Smalltalk or Forth, C++ will have had an influence what you know (and potentially vice versa). If I have a little idea about what you're familiar with it'll help highlight similarities or differences between the two. Equally, there'd be no point saying "this is like X" if there's nobody here who uses it.
+Are you primarily JavaScript, Java, Python, something else? I just want to keep that in mind because unless you're working in something a bit wacky like Lisp or Smalltalk or Forth, {cpp} will have had an influence what you know (and potentially vice versa). If I have a little idea about what you're familiar with it'll help highlight similarities or differences between the two. Equally, there'd be no point saying "this is like X" if there's nobody here who uses it.
 
 What kind of applications do you work on?
+
+Have you worked in/are familiar with another language?
+
+Why are you here? Not here at this conference, but in this particular session?
+
+While I was preparing for this session, I spoke to a number of different people about what they might want to get out of a session like this.
 --
+
+=== !
+
+[quote]
+--
+I would hope to gain the dissolution of fear.
+--
+=== !
+
+[quote]
+--
+I see {cpp} and the like as developers that just have a completely different mindset and skill because it feels like less is done for them. How do you do it?
+--
+
+=== !
+
+[quote]
+--
+I'm not your audience because I jumped OOP
+--
+
+=== !
+
+[quote]
+--
+Why?
+--
+

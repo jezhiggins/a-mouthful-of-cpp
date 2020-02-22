@@ -34,5 +34,5 @@ Perl, Ruby, Python, JavaScript - just run them! Source is portable.
 
 Java, C# - compiled to byte code, run that on a JVM. Bytecode is portable. (Might hotspot compiled to machine code on the fly, but that isn't part of the delivered executable.)
 
-C++, Go, Rust - compiled to machine code.  Source can be portable, executables are not.
+{cpp}, Go, Rust - compiled to machine code.  Source can be portable, executables are not.
 --

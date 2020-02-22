@@ -1,14 +1,14 @@
 == {cpp}
 
-What do you think C++ is?
+What do you think {cpp} is?
 
 [NOTE.speaker]
 --
-Or, perhaps, what do you think of C++?
+Or, perhaps, what do you think of {cpp}?
 
-All languages have a degree of rumour and hearsay around them - often of the form "nobody uses that anymore", "it's really complicated" (eg Perl, Ruby, XSLT, Cobol) - and less commonly, "the people who use are all snobs and weirdos" (Lisp, Haskell, C++).
+All languages have a degree of rumour and hearsay around them - often of the form "nobody uses that anymore", "it's really complicated" (eg Perl, Ruby, XSLT, Cobol) - and less commonly, "the people who use are all snobs and weirdos" (Lisp, Haskell, {cpp}).
 
-But what do you think C++ is? What's it's used for, or what you've heard about working in it or anything like that.
+But what do you think {cpp} is? What's it's used for, or what you've heard about working in it or anything like that.
 
 I'm not trying to catch anyone out here - I'm not going to leap on what you say and tear it to bits. You might, after all, think people who use it are snobs and weirdos, and nothing could be worse than if I immediately proved that to be the case :)
 
@@ -17,47 +17,19 @@ I'm not trying to catch anyone out here - I'm not going to leap on what you say 
 
 == {cpp}
 
-What do you think C++ is?
+What do you think {cpp} is?
 
 What would you like to know?
 
 [NOTE.speaker]
 --
-All languages have a degree of rumour and hearsay around them - often of the form "nobody uses that anymore", "it's really complicated" (eg Perl, Ruby, XSLT, Cobol) - and less commonly, "the people who use are all snobs and weirdos" (Lisp, Haskell, C++).
+All languages have a degree of rumour and hearsay around them - often of the form "nobody uses that anymore", "it's really complicated" (eg Perl, Ruby, XSLT, Cobol) - and less commonly, "the people who use are all snobs and weirdos" (Lisp, Haskell, {cpp}).
 
-But what do you think C++ is? What's it's used for, or what you've heard about working in it or anything like that.
+But what do you think {cpp} is? What's it's used for, or what you've heard about working in it or anything like that.
 
 I'm not trying to catch anyone out here - I'm not going to leap on what you say and tear it to bits. You might, after all, think people who use it are snobs and weirdos, and nothing could be worse than if I immediately proved that to be the case :)
 
-We can also turn this around. I appreciate this is might be a difficult question, but what would you to know about C++? I might not be able to tell you, but if you have a question do ask, either now or as they occur to you. This whole thing will be better if you do. I'm a decent hand at {cpp}, but one of the ways we learn is by teaching. There are, hopefully, things I can show you this afternoon, and there are definitely things you can teach me. If there's something that's not clear, or it sounds like I'm just talking nonsense, or, you know, you're just interested then please do ask and by the end of the afternoon we'll all come out with a better appreciation of the language than when we came in.
+We can also turn this around. I appreciate this is might be a difficult question, but what would you to know about {cpp}? I might not be able to tell you, but if you have a question do ask, either now or as they occur to you. This whole thing will be better if you do. I'm a decent hand at {cpp}, but one of the ways we learn is by teaching. There are, hopefully, things I can show you this afternoon, and there are definitely things you can teach me. If there's something that's not clear, or it sounds like I'm just talking nonsense, or, you know, you're just interested then please do ask and by the end of the afternoon we'll all come out with a better appreciation of the language than when we came in.
 
-While I was preparing for this session, I spoke to a number of different people about what they might want to get out of a session like this.
---
-
-=== !
-
-[quote]
---
-I would hope to gain the dissolution of fear.
---
-=== !
-
-[quote]
---
-I see C++ and the like as developers that just have a completely different mindset and skill because it feels like less is done for them. How do you do it?
---
-
-=== !
-
-[quote]
---
-I'm not your audience because I jumped OOP
---
-
-=== !
-
-[quote]
---
-Why?
 --
 

@@ -9,7 +9,7 @@ The type doesn't change
 
 [NOTE.speaker]
 --
-Static typing in C++ - you might also have heard people talking about strong typing - means the following
+Static typing in {cpp} - you might also have heard people talking about strong typing - means the following
 
 variables have a type,
 
@@ -19,21 +19,27 @@ the type of the variable doesn't change
 
 If you think about the consequences of that for a moment ...
 
-Types - the data structures, the objects, whatever we want to call them are important to how we program in C++.  You program will have a lot of types.
+Types - the data structures, the objects, whatever we want to call them are important to how we program in {cpp}.  You program will have a lot of types.
 --
 
-=== Statically Typed
+=== !
 
 [source,javascript]
 ----
+
 let a = 1
-...
+
+// ...
+
 a = 'Fish'
-...
+
+// ...
+
 a = {
   name: 'Peppa',
   animal: 'Pig'
 }
+
 ----
 
 [NOTE.speaker]
@@ -45,19 +51,23 @@ It starts out as a Number (not an integer!), then later it becomes a string, the
 In all JavaScript has 6 types - undefined, boolean, number, string, object, function.  Even things like arrays and regexes are objects.  If I define a class in JavaScript, those objects are still just objects.
 --
 
-=== Dynamically Typed
+=== !
 
 [source,javascript]
 ----
+
 let a = 1
-...
+
+// ...
+
 a = 'Fish'
-...
+
+// ...
+
 a = new KidsFavourite("Peppa", "Pig")
 
-// more code
-
 make_into_sausages(a)
+
 ----
 
 [NOTE.speaker]
@@ -71,41 +81,53 @@ A language like Python is a little more sophisticated - dicts, lists and tuples 
 
 [source,cpp]
 ----
-auto a = 1
-...
-auto s = std::string { "Fish" }
-...
+
+int a = 1
+
+// ...
+
+std::string s = "Fish"
+
 ----
 
 [NOTE.speaker]
 --
-In a statically typed language like C++ (other statically typed languages are available), the type is known from the moment the variable is created, and it doesn't change.
+In a statically typed language like {cpp} (other statically typed languages are available), the type is known from the moment the variable is created, and it doesn't change.
+--
+
+=== !
+
+[source,cpp]
+----
+
+auto a = 1
+
+// ...
+
+auto s = std::string { "Fish" }
+
+----
+
+[NOTE.speaker]
+--
+You could also write that code like this.
 
 In this little snippet, we're letting the compiler deduce the types for us, but the point is they're still known.
+
+The modern preference is for auto - it's less typing all round, and generally more correct.
 --
 
 === !
 
 [source,cpp]
 ----
-int a = 1
-...
-std::string s = "Fish"
-...
-----
 
-[NOTE.speaker]
---
-You could also write that code like this. The modern preference is for auto - it's less typing all round, and generally more correct.
---
-
-=== !
-
-[source,cpp]
-----
 std::string frobulate(int i);
-...
+
+// ...
+
 auto t = frobulate(99);
+
 ----
 
 [NOTE.speaker]
@@ -119,9 +141,13 @@ Here, I've declared a function - it wants an integer, and it returns a string. I
 
 [source,cpp]
 ----
+
 std::string frobulate(int i);
-...
+
+// ...
+
 auto t = frobulate(99.5);
+
 ----
 
 [NOTE.speaker]
@@ -135,11 +161,15 @@ Converting a floating point to an integer isn't safe - if I want that to happen,
 
 [source,cpp]
 ----
+
 std::string frobulate(int i);
-...
+
+// ...
+
 if (!frobulate(99)) {
   // ...
 }
+
 ----
 
 [NOTE.speaker]
@@ -151,21 +181,27 @@ This works in other ways too - an if statement expects a boolean expression. A s
 
 [source,cpp]
 ----
+
 std::string frobulate(int i);
-...
-if (!frobulate(99).empty()) {
+
+// ...
+
+if (frobulate(99).empty()) {
   // ...
 }
+
 ----
 
 [NOTE.speaker]
 --
 Perhaps I meant something like this.
 
+As before, the call to empty is checked at compile time - can I call this function on this object. If I can't, compilation will fail.
+
 This eliminates a whole class of bugs. It also means that you end up thinking about the types you need a bit more.
 
 I'm not suggesting that when we work in JavaScript or Python or whatever, we're just slinging stuff together and using a variable as an integer one moment and a string the next. But, you know, we've all written a function that returned a string most of the time, and then returned false if that lookup (or whatever) failed, right?
 
-With Python or JavaScript or PHP or whatever, we can often go quite a long way just with array and maps, right. We just poke things in there and we're fine. Your C++ will look different :)
+With Python or JavaScript or PHP or whatever, we can often go quite a long way just with array and maps, right. We just poke things in there and we're fine. Your {cpp} will look different :)
 --
 

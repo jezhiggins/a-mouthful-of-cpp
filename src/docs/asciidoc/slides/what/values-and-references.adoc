@@ -1,26 +1,30 @@
-=== Values and References
+=== !
 
 [source,javascript]
 ----
+
 a = 1
 
 b = a
+
 ----
 
 [NOTE.speaker]
 --
-The other key way C++ differs from JavaScript, Java, C#, and they way it deals with values and references.
+The other key way {cpp} type system differs from JavaScript, Java, C#, and they way it deals with values and references.
 --
 
-=== Values and References
+=== !
 
 [source,python]
 ----
+
 a = 1
 
 b = a
 
 b += 2
+
 ----
 
 [NOTE.speaker]
@@ -32,13 +36,15 @@ If we do this, what's the value of a and b?
 So, here, a and b have value semantics. If I do something to a, b doesn't change and if I do something to b, a isn't affected.
 --
 
-=== Values and References
+=== !
 
 [source,javascript]
 ----
+
 a = [1, 2, 3, 4]
 
 b = a
+
 ----
 
 [NOTE.speaker]
@@ -46,15 +52,17 @@ b = a
 What about now?
 --
 
-=== Values and References
+=== !
 
 [source,javascript]
 ----
+
 a = [1, 2, 3, 4]
 
 b = a
 
 b[1] = 99
+
 ----
 
 [NOTE.speaker]
@@ -70,15 +78,17 @@ Some types - boolean, integers, strings, often called the builtin types - behave
 (C# structs have value sematics, the new Java records will too I think)
 --
 
-=== Values ...
+=== !
 
 [source,cpp]
 ----
+
 auto a = 1;
 
 auto b = a;
 
 b += 2;
+
 ----
 
 [NOTE.speaker]
@@ -86,15 +96,17 @@ b += 2;
 Same as before, right? a is 1 and b = 3.
 --
 
-=== Values ...
+=== !
 
 [source,cpp]
 ----
+
 auto a = std::vector<int> { 1, 2, 3, 4 };
 
 auto b = a;
 
 b[1] = 99;
+
 ----
 
 [NOTE.speaker]
@@ -104,15 +116,17 @@ I've probably tipped my hand here, but any guesses?
 b is a copy of a, so anything I do to b doesn't change a at all
 --
 
-=== ... and References
+=== !
 
 [source,cpp]
 ----
+
 auto a = std::vector<int> { 1, 2, 3, 4 };
 
 auto& b = a;
 
 b[1] = 99;
+
 ----
 
 [NOTE.speaker]
@@ -122,22 +136,24 @@ And now?
 Here, I've explicitly said I want a reference, so now b refers to a, and anything I do to b is actually happening to a.
 --
 
-=== ... and References
+=== !
 
 [source,cpp]
 ----
+
 auto a = 1;
 
 auto& b = a;
 
 b += 2;
+
 ----
 
 [NOTE.speaker]
 --
 Ah, I can also apply reference semantics to built in types like integers.
 
-So, in C++, I can have both value semantics and reference semantics. They're not implicit in the thing I'm working with - I can choose, for whatever suits the situation best.
+So, in {cpp}, I can have both value semantics and reference semantics. They're not implicit in the thing I'm working with - I can choose, for whatever suits the situation best.
 
 Notice that the choice of value or reference is separate from the declaration - it's not implicit in the thing, it's related to how you want to handle it. Need a copy - take a copy, need a reference - have a reference.
 

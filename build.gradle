@@ -42,4 +42,11 @@ asciidoctor {
       'imagesdir'    : 'images'
 }
 
+task copyCodeRay (type: Copy) {
+  from 'src/docs/asciidoctor-coderay.css'
+  into 'build/asciidoc/revealjs'
+}
+
+asciidoctor.dependsOn copyCodeRay
+
 defaultTasks 'asciidoctor'

@@ -1,5 +1,8 @@
 === No Garbage Collection
 
+
+=== No Garbage Collection
+
 image::dont-panic.jpg["Don't Panic"]
 
 [NOTE.speaker]
