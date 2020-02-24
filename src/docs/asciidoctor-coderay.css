@@ -1,5 +1,9 @@
 /* Stylesheet for CodeRay to match GitHub theme | MIT License | http://foundation.zurb.com */
 /*pre.CodeRay {background-color:#f7f7f8;}*/
+pre.CodeRay {
+    background-color: black;
+    min-height: 500px;
+}
 .CodeRay .line-numbers{border-right:1px solid #d8d8d8;padding:0 0.5em 0 .25em}
 .CodeRay span.line-numbers{display:inline-block;margin-right:.5em;color:rgba(0,0,0,.3)}
 .CodeRay .line-numbers strong{color:rgba(0,0,0,.4)}
@@ -37,8 +41,8 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .function{color:#900;font-weight:bold}
 .CodeRay .global-variable{color:#008080}
 .CodeRay .hex{color:#058}
-.CodeRay .integer,.CodeRay .float{color:#099}
-.CodeRay .include{color:#555}
+.CodeRay .integer,.CodeRay .float{color:#0bb}
+.CodeRay .include{color:#999}
 .CodeRay .inline{color:#000}
 .CodeRay .inline .inline{background:#ccc}
 .CodeRay .inline .inline .inline{background:#bbb}
@@ -53,24 +57,24 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .predefined{color:#369}
 .CodeRay .preprocessor{color:#579}
 .CodeRay .pseudo-class{color:#555}
-.CodeRay .directive{font-weight:bold}
+.CodeRay .directive{font-weight:bold;color:yellow}
 .CodeRay .type{font-weight:bold}
 .CodeRay .predefined-type{color:inherit}
 .CodeRay .reserved,.CodeRay .keyword {color:yellow;font-weight:bold}
-.CodeRay .key{color:#808}
-.CodeRay .key .delimiter{color:#606}
-.CodeRay .key .char{color:#80f}
+.CodeRay .key{color:yellowgreen}
+.CodeRay .key .delimiter{color:yellowgreen}
+.CodeRay .key .char{color:yellowgreen}
 .CodeRay .value{color:#088}
 .CodeRay .regexp .delimiter{color:#808}
 .CodeRay .regexp .content{color:#808}
 .CodeRay .regexp .modifier{color:#808}
 .CodeRay .regexp .char{color:#d14}
 .CodeRay .regexp .function{color:#404;font-weight:bold}
-.CodeRay .string{color:#d20}
+.CodeRay .string{color:greenyellow}
 .CodeRay .string .string .string{background:#ffd0d0}
-.CodeRay .string .content{color:#d14}
-.CodeRay .string .char{color:#d14}
-.CodeRay .string .delimiter{color:#d14}
+.CodeRay .string .content{color:greenyellow}
+.CodeRay .string .char{color:greenyellow}
+.CodeRay .string .delimiter{color:greenyellow}
 .CodeRay .shell{color:#d14}
 .CodeRay .shell .delimiter{color:#d14}
 .CodeRay .symbol{color:#990073}
