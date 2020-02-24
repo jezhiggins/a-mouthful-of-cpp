@@ -12,7 +12,7 @@ We need a better -- more descriptive -- term to replace "`multi-paradigm`".
 He continues "For example, using object-oriented programming when run-time resolution between different object types is required and generic programming when static type safety and run-time performance is at a premium. Naturally, the main strength of multiparadigm programming is in programs where more than one paradigm (programming style) is used, so that it would be hard to get the same effect by composing a system out of parts written in languages supporting different paradigms. I find the most compelling cases for multiparadigm programming are found where techniques from different paradigms are used in close collaboration to write code that is more elegant and more maintainable than would be possible within a single paradigm."
 --
 
-=== Multi-paradigm
+=== !
 
 image::multi-paradigm-design-for-cpp.jpg['Multi-Paradigm Design for {cpp}']
 

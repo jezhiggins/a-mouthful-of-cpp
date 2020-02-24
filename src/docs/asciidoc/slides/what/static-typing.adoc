@@ -64,7 +64,7 @@ a = 'Fish'
 
 // ...
 
-a = new KidsFavourite("Peppa", "Pig")
+a = new KidsFavourite('Peppa', 'Pig')
 
 make_into_sausages(a)
 
@@ -82,11 +82,11 @@ A language like Python is a little more sophisticated - dicts, lists and tuples 
 [source,cpp]
 ----
 
-int a = 1
+int a = 1;
 
 // ...
 
-std::string s = "Fish"
+std::string s = "Fish";
 
 ----
 
@@ -100,11 +100,11 @@ In a statically typed language like {cpp} (other statically typed languages are 
 [source,cpp]
 ----
 
-auto a = 1
+auto a = 1;
 
 // ...
 
-auto s = std::string { "Fish" }
+auto s = std::string { "Fish" };
 
 ----
 

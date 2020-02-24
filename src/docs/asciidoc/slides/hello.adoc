@@ -42,6 +42,13 @@ While I was preparing for this session, I spoke to a number of different people 
 
 [quote]
 --
+Why?
+--
+
+=== !
+
+[quote]
+--
 I would hope to gain the dissolution of fear.
 --
 === !
@@ -56,12 +63,5 @@ I see {cpp} and the like as developers that just have a completely different min
 [quote]
 --
 I'm not your audience because I jumped OOP
---
-
-=== !
-
-[quote]
---
-Why?
 --
 
