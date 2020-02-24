@@ -1,4 +1,4 @@
-== Hello, World!
+== The Minimal C++ Program
 
 [source,cpp]
 ----

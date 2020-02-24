@@ -1,6 +1,7 @@
+[data-transition='None']
 === No Garbage Collection
 
-
+[data-transition='None']
 === No Garbage Collection
 
 image::dont-panic.jpg["Don't Panic"]
