@@ -70,11 +70,11 @@ table.CodeRay td.code>pre{padding:0}
 .CodeRay .regexp .modifier{color:#808}
 .CodeRay .regexp .char{color:#d14}
 .CodeRay .regexp .function{color:#404;font-weight:bold}
-.CodeRay .string{color:greenyellow}
+.CodeRay .string{color:green}
 .CodeRay .string .string .string{background:#ffd0d0}
-.CodeRay .string .content{color:greenyellow}
-.CodeRay .string .char{color:greenyellow}
-.CodeRay .string .delimiter{color:greenyellow}
+.CodeRay .string .content{color:green}
+.CodeRay .string .char{color:green}
+.CodeRay .string .delimiter{color:green}
 .CodeRay .shell{color:#d14}
 .CodeRay .shell .delimiter{color:#d14}
 .CodeRay .symbol{color:#990073}
